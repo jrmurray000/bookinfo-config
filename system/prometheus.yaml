@@ -1,0 +1,12 @@
+kind: Sync
+apiVersion: nomos.dev/v1alpha1
+metadata:
+  name: prometheus
+spec:
+  groups:
+    - group: config.istio.io
+      kinds:
+      - kind: prometheus
+        versions:
+        - version: v1alpha2
+
