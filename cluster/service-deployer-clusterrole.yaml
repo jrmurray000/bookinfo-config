@@ -1,0 +1,9 @@
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1
+metadata:
+  name: service-deployer
+rules:
+- apiGroups: [""]
+  resources: ["deplouyments, services"]
+  verbs:
+  - "*"
